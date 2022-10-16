@@ -1,13 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿System.Console.WriteLine();
+string[] Days = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
 
-int numberA=4;
-int numberB=16;
-if (numberB ==(numberA*numberA))
-{
-    Console.WriteLine("Yes");
-}
-else
-{
-    Console.WriteLine("think more,");
-}
+System.Console.Write("Введите номер дня недели:   ");
+string writeDay = Console.ReadLine();
+bool result = int.TryParse(writeDay, out int dayNumber);
+
+System.Console.WriteLine();
+if (result == false) System.Console.WriteLine("Число введено неверно");
+else if (0 < dayNumber && dayNumber < 8) System.Console.WriteLine($"{dayNumber}-й день недели - {Days[dayNumber - 1]}");
+else System.Console.WriteLine("Дня недели с таким номером не существует");
+System.Console.WriteLine();
