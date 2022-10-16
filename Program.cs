@@ -1,19 +1,17 @@
 ﻿Console.Clear();
+System.Console.WriteLine();
 
-int Number = new Random().Next(10, 100);
-int Max = 0;
+int Number = new Random().Next(100, 1000);
+int NewNumber = 0;
 
-int MaxDigit()
+int NumberWithoutSecDig()
 {
-    int DigitOne = Number / 10;
-    int DigitTwo = Number % 10;
-    if (DigitOne > DigitTwo) Max = DigitOne;
-    else Max = DigitTwo;
-
-    return Max;
+    NewNumber = Number / 100 * 10 + Number % 10;
+    return NewNumber;
 }
 
-MaxDigit();
+NumberWithoutSecDig();
+
 System.Console.WriteLine();
-System.Console.WriteLine($"В числе {Number} наибольшая цифра {Max}");
+System.Console.WriteLine($"Если из числа {Number} удалить вторую цифру, получится число {NewNumber}");
 System.Console.WriteLine();
