@@ -1,32 +1,15 @@
 ﻿System.Console.WriteLine();
 
-System.Console.Write("Введите число:   ");
-string writeN = Console.ReadLine();
-int N = Convert.ToInt32(writeN);
+int number = new Random().Next(1, 100000);
+int sumDigit = 0;
+System.Console.Write($"Сумма цифр числа {number} равна ");
 
-
-int[] GetCubeTable(int N)
+while (number > 0)
 {
-    int[] cubs = new int[N];
-    int number = 1;
-    for (int i = 0; i < N; i++)
-    {
-        cubs[i] = number * number * number;
-        number++;
-    }
-    return cubs;
+    int digit = number % 10;
+    sumDigit = sumDigit + digit;
+    number = number / 10;
 }
 
-void PrintCubs(int[] array)
-{
-    int number = 1;
-    for (int i = 0; i < array.Length; i++)
-    {
-        System.Console.Write($"{number} ^ 3 = ");
-        System.Console.WriteLine(array[i]);
-        number++;
-    }
-}
-
-int[] CubeTable = GetCubeTable(N);
-PrintCubs(CubeTable);
+System.Console.WriteLine(sumDigit);
+System.Console.WriteLine();
