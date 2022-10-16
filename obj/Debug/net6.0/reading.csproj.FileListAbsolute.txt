@@ -1,0 +1,15 @@
+C:\Users\kmoro\Desktop\git\c++\Read\reading\bin\Debug\net6.0\reading.exe
+C:\Users\kmoro\Desktop\git\c++\Read\reading\bin\Debug\net6.0\reading.deps.json
+C:\Users\kmoro\Desktop\git\c++\Read\reading\bin\Debug\net6.0\reading.runtimeconfig.json
+C:\Users\kmoro\Desktop\git\c++\Read\reading\bin\Debug\net6.0\reading.dll
+C:\Users\kmoro\Desktop\git\c++\Read\reading\bin\Debug\net6.0\reading.pdb
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.csproj.AssemblyReference.cache
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.AssemblyInfoInputs.cache
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.AssemblyInfo.cs
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.csproj.CoreCompileInputs.cache
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.dll
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\refint\reading.dll
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.pdb
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\reading.genruntimeconfig.cache
+C:\Users\kmoro\Desktop\git\c++\Read\reading\obj\Debug\net6.0\ref\reading.dll
