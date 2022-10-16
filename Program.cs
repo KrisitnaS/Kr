@@ -1,15 +1,18 @@
 ﻿System.Console.WriteLine();
 
-int number = new Random().Next(1, 100000);
-int sumDigit = 0;
-System.Console.Write($"Сумма цифр числа {number} равна ");
+System.Console.Write("Введите число:   ");
+string writeN = Console.ReadLine();
+int N = Convert.ToInt32(writeN);
 
-while (number > 0)
+int GetNumbersComposition(int x)
 {
-    int digit = number % 10;
-    sumDigit = sumDigit + digit;
-    number = number / 10;
+    int comp = 1;
+    for (int num = 1; num <= x; num++)
+    {
+        comp = comp * num;
+    }
+    return comp;
 }
 
-System.Console.WriteLine(sumDigit);
+System.Console.WriteLine($"Произведение чисел от 1 до {N} равно {GetNumbersComposition(N)}");
 System.Console.WriteLine();
