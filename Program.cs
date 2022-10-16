@@ -1,17 +1,21 @@
-﻿Console.Clear();
-System.Console.WriteLine();
+﻿System.Console.WriteLine();
 
-int Number = new Random().Next(100, 1000);
-int NewNumber = 0;
+int Number1 = new Random().Next(11, 101);
+int Number2 = new Random().Next(1, 11);
+int result = 0;
 
-int NumberWithoutSecDig()
+int MultipleNumber()
 {
-    NewNumber = Number / 100 * 10 + Number % 10;
-    return NewNumber;
+    result = Number1 % Number2;
+    return result;
 }
 
-NumberWithoutSecDig();
+MultipleNumber();
 
 System.Console.WriteLine();
-System.Console.WriteLine($"Если из числа {Number} удалить вторую цифру, получится число {NewNumber}");
+if (result == 0) System.Console.WriteLine($"Число {Number1} кратно числу {Number2}");
+else
+{
+    Console.WriteLine($"Число {Number1} не кратно числу {Number2}, остаток от деления равен {Number1 % Number2}");
+}
 System.Console.WriteLine();
